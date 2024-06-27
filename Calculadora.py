@@ -24,3 +24,5 @@ if __name__ == "_main_":
     else:
         resultado = calculadora(operacao, num1, num2)
         print(f"Resultado: {resultado}")
+
+        # Dione Braga
