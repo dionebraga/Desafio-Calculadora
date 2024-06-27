@@ -1,27 +1,18 @@
 def calculadora(operacao, num1, num2):
     match operacao:
-        case "adicao":
+        case 'adicao':
             return num1 + num2
-        case "subtracao":
+        case 'subtracao':
             return num1 - num2
-        case "multiplicacao":
+        case 'multiplicacao':
             return num1 * num2
-        case "divisao":
+        case 'divisao':
+            if num2 == 0:
+                return "Erro: divisão por zero."
             return num1 / num2
         case _:
-            return "Operação inválida"
+            return "Operação inválida."
 
-def main():
-    print("Escolha a operação: adicao, subtracao, multiplicacao, divisao")
-    operacao = input("Digite a operação: ").strip().lower()
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
-
-    resultado = calculadora(operacao, num1, num2)
-    print(f"O resultado da {operacao} é: {resultado}")
-
+# Exemplo de uso
 if __name__ == "_main_":
     main()
-
-    # main
-    
